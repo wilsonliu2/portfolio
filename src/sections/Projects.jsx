@@ -29,7 +29,7 @@ const Projects = () => {
       <ProjectCard
         image={cunyCompass}
         title="LA'CUNY Compass"
-        description="A group hackathon project that leverages AI to provide personalized navigation and resources for CUNY students."
+        description="A group hackathon project that leverages AI to provide personalized navigation and resources for CUNY students, winning the Data Science Award of the competition."
         technologies={["React", "Tailwind CSS", "Leaflet"]}
         repoLink="https://github.com/crosve/CTP-Hack"
         demoLink="https://ctp-hack.vercel.app/"
