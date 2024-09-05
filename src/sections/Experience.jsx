@@ -32,7 +32,7 @@ const Experience = () => {
       />
       <ExperienceCard
         company="CUNY Tech Prep"
-        date="Jul 2023 - Present"
+        date="Jul 2024 - Present"
         title="Software Development Fellow"
         description="Working on and learning about full-stack web applications while mastering industry best practices."
       />
