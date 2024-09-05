@@ -38,7 +38,7 @@ const Experience = () => {
       />
       <ExperienceCard
         company="The TOW Foundation"
-        date="Jun 2023 - Aug 2024"
+        date="Jun 2024 - Aug 2024"
         title="Research Assistant"
         description="Collaborated with a professor to program an interactive, multi-layered health map of NYC."
       />
