@@ -44,7 +44,7 @@ const Experience = () => {
       />
       <ExperienceCard
         company="Brooklyn College"
-        date="Oct 2022 - May 2024"
+        date="Oct 2022 - Present"
         title="Computer Science Tutor"
         description="Tutored students in programming concepts, improving their problem-solving and coding skills."
       />

@@ -79,7 +79,7 @@ const ProjectCard = ({
       {/* Text content */}
       <div className="w-2/3 pl-5">
         {/* Project title */}
-        <h3 className="linear-mask text-lg font-semibold tracking-wide text-neutral-100">
+        <h3 className="linear-mask text-lg tracking-wide text-neutral-100">
           {title}
         </h3>
         {/* Description */}
