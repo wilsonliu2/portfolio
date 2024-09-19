@@ -21,7 +21,7 @@ const About = () => {
       </motion.div>
       <motion.div
         variants={fadeInVariant}
-        className="px-5 font-extralight text-neutral-400"
+        className="px-5 font-thin text-neutral-400"
       >
         <p>
           Passionate and aspiring full-stack developer and college student from

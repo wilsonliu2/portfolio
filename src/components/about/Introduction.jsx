@@ -43,7 +43,7 @@ const Introduction = () => {
   return (
     <div className="px-5 py-2 text-neutral-100">
       {/* Name */}
-      <h1 className="text-3xl font-semibold">hi, im Wilson</h1>
+      <h1 className="text-3xl font-semibold">Hi, im Wilson</h1>
       {/* Title */}
       <p className="mt-2 text-xl font-normal">
         aspiring {/* Typewriter animation */}

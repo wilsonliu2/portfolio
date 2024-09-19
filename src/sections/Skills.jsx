@@ -52,7 +52,7 @@ const Skills = () => {
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-300">frontend</h3>
+            <h3 className="text-lg font-light text-neutral-400">frontend</h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -75,7 +75,7 @@ const Skills = () => {
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-300">backend</h3>
+            <h3 className="text-lg font-light text-neutral-400">backend</h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -100,7 +100,7 @@ const Skills = () => {
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-300">libraries</h3>
+            <h3 className="text-lg font-light text-neutral-400">libraries</h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -129,7 +129,7 @@ const Skills = () => {
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-300">languages</h3>
+            <h3 className="text-lg font-light text-neutral-400">languages</h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}

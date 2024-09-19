@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 import TechButton from "./TechButton";
 
 const hoverVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.85 },
   visible: { opacity: 1, scale: 1 },
 };
 
