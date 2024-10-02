@@ -26,7 +26,7 @@ const Footer = () => {
       <span>&copy; 2024 | Wilson Liu</span>
       {/* Moving Image */}
       <motion.img
-        src="/src/assets/zkay_11-hollow-knight3.gif"
+        src="../../public/zkay_11-hollow-knight3.gif"
         alt="Moving Hollow Knight Image"
         className="-mt-5 inline-block h-16 w-16"
         animate={{
