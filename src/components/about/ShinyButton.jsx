@@ -33,6 +33,7 @@ const ShinyButton = ({ text, link }) => {
             stiffness: 10,
             damping: 5,
             mass: 0.1,
+            size: 105,
           },
         }}
         className="radial-gradient relative inline-flex items-center rounded-md px-6 py-2"

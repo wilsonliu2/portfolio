@@ -2,6 +2,7 @@ import React from "react";
 import ShinyButton from "./ShinyButton";
 import SocialButton from "./SocialButton";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoIosDocument } from "react-icons/io";
 
 const Socials = () => {
   return (

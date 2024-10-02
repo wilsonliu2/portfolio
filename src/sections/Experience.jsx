@@ -28,7 +28,7 @@ const Experience = () => {
         company="TipTop Technologies"
         date="Aug 2024 - Present"
         title="Software Engineer Intern"
-        description="Primarily working on the front-end for cutting-edge AI applications."
+        description="Working on the front-end for responsive web applications."
       />
       <ExperienceCard
         company="CUNY Tech Prep"
@@ -46,7 +46,7 @@ const Experience = () => {
         company="Brooklyn College"
         date="Oct 2022 - Present"
         title="Computer Science Tutor"
-        description="Tutored students in programming concepts, improving their problem-solving and coding skills."
+        description="Tutorign students in programming concepts, improving their problem-solving and coding skills."
       />
     </motion.section>
   );
