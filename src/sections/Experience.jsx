@@ -46,7 +46,7 @@ const Experience = () => {
         company="Brooklyn College"
         date="Oct 2022 - Present"
         title="Computer Science Tutor"
-        description="Tutorign students in programming concepts, improving their problem-solving and coding skills."
+        description="Tutoring students in programming concepts, improving their problem-solving and coding skills."
       />
     </motion.section>
   );

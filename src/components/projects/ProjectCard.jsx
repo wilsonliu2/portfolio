@@ -21,6 +21,14 @@ const getTechColor = (tech) => {
       return "#48BB78"; // Green
     case "d3":
       return "#2D3748"; // Dark gray
+    case "pinata cloud":
+      return "#F56565"; // Red
+    case "express js":
+      return "#6B7280"; // Slate gray
+    case "mongodb":
+      return "#47A248"; // MongoDB green
+    case "google maps api":
+      return "#4285F4"; // Google blue
     default:
       return "#A0AEC0"; // Cool gray
   }

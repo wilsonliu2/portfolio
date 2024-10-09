@@ -4,6 +4,7 @@ import ProjectCard from "../components/projects/ProjectCard";
 import Divider from "../components/Divider";
 import cunyCompass from "../assets/cuny-compass.png";
 import nycHealthMap from "../assets/nyc-health-map.png";
+import wander from "../assets/wander.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,7 +26,14 @@ const Projects = () => {
       variants={containerVariants}
     >
       <Divider text="projects" />
-
+      <ProjectCard
+        image={wander}
+        title="Wander"
+        description="A winning group project at BigRed//Hacks, Cornell's hackathon, that helps people discover and share unique travel experiences, utilizing decentralized storage with Pinata and IPFS, and earning the Best Use of MongoDB Atlas award."
+        technologies={["Pinata Cloud", "Google Maps API", "MongoDB"]}
+        repoLink="https://github.com/wilsonliu2/wander"
+        demoLink="https://devpost.com/software/wander-rs9m76"
+      />
       <ProjectCard
         image={cunyCompass}
         title="LA'CUNY Compass"
