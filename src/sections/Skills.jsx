@@ -1,11 +1,22 @@
 import React, { useRef, useEffect, useState } from "react";
-import { FaReact, FaCss3Alt, FaHtml5, FaJs, FaJava } from "react-icons/fa";
+import {
+  FaReact,
+  FaCss3Alt,
+  FaHtml5,
+  FaJs,
+  FaJava,
+  FaGitAlt,
+} from "react-icons/fa";
 import {
   SiTailwindcss,
   SiSpringboot,
   SiMysql,
   SiFramer,
   SiLeaflet,
+  SiPostgresql,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
 } from "react-icons/si";
 import Divider from "../components/Divider";
 import Icon from "../components/skills/Icon";
@@ -45,14 +56,16 @@ const Skills = () => {
       <div className="p-5 pt-11">
         <Divider text="proficient skills" />
         <div className="mt-4 flex justify-between">
-          {/* Frontend skills */}
+          {/* Frontend Development */}
           <motion.div
             className="w-1/2 pr-4"
             variants={containerVariants}
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-400">frontend</h3>
+            <h3 className="text-lg font-light text-neutral-400">
+              Frontend Development
+            </h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -65,17 +78,25 @@ const Skills = () => {
               <motion.li variants={itemVariants}>
                 <Icon icon={FaCss3Alt} label="CSS" />
               </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={FaReact} label="React" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiTailwindcss} label="Tailwind CSS" />
+              </motion.li>
             </motion.ul>
           </motion.div>
 
-          {/* Backend skills */}
+          {/* Backend & Databases */}
           <motion.div
             className="w-1/2 border-l border-neutral-700 pl-4"
             variants={containerVariants}
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-400">backend</h3>
+            <h3 className="text-lg font-light text-neutral-400">
+              Backend & Databases
+            </h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -88,19 +109,33 @@ const Skills = () => {
               <motion.li variants={itemVariants}>
                 <Icon icon={SiMysql} label="MySQL" />
               </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiNodedotjs} label="Node.js" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiExpress} label="Express" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiMongodb} label="MongoDB" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiPostgresql} label="PostgreSQL" />
+              </motion.li>
             </motion.ul>
           </motion.div>
         </div>
 
         <div className="mt-8 flex justify-between border-t border-neutral-700 pt-8">
-          {/* Libraries */}
+          {/* Tools & Frameworks */}
           <motion.div
             className="w-1/2 pr-4"
             variants={containerVariants}
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-400">libraries</h3>
+            <h3 className="text-lg font-light text-neutral-400">
+              Tools & Frameworks
+            </h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}
@@ -108,13 +143,10 @@ const Skills = () => {
               animate={animationTrigger ? "visible" : "hidden"}
             >
               <motion.li variants={itemVariants}>
-                <Icon icon={FaReact} label="React" />
+                <Icon icon={FaGitAlt} label="Git" />
               </motion.li>
               <motion.li variants={itemVariants}>
-                <Icon icon={SiTailwindcss} label="Tailwind CSS" />
-              </motion.li>
-              <motion.li variants={itemVariants}>
-                <Icon icon={SiLeaflet} label="Leaflet" />
+                <Icon icon={SiLeaflet} label="Leaflet.js" />
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiFramer} label="Framer Motion" />
@@ -122,14 +154,16 @@ const Skills = () => {
             </motion.ul>
           </motion.div>
 
-          {/* Languages */}
+          {/* Programming Languages */}
           <motion.div
             className="w-1/2 border-l border-neutral-700 pl-4"
             variants={containerVariants}
             initial="hidden"
             animate={animationTrigger ? "visible" : "hidden"}
           >
-            <h3 className="text-lg font-light text-neutral-400">languages</h3>
+            <h3 className="text-lg font-light text-neutral-400">
+              Programming Languages
+            </h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
               variants={containerVariants}

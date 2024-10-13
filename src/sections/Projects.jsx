@@ -29,7 +29,7 @@ const Projects = () => {
       <ProjectCard
         image={wander}
         title="Wander"
-        description="A winning group project at BigRed//Hacks, Cornell's hackathon, that helps people discover and share unique travel experiences, utilizing decentralized storage with Pinata and IPFS, and earning the Best Use of MongoDB Atlas award."
+        description="A decentralized travel-sharing platform built using React and MongoDB, winning Best Use of MongoDB Atlas at Cornell's BigRed//Hacks."
         technologies={["Pinata Cloud", "Google Maps API", "MongoDB"]}
         repoLink="https://github.com/wilsonliu2/wander"
         demoLink="https://devpost.com/software/wander-rs9m76"
@@ -37,16 +37,16 @@ const Projects = () => {
       <ProjectCard
         image={cunyCompass}
         title="LA'CUNY Compass"
-        description="A group hackathon project that leverages AI to provide personalized navigation and resources for CUNY students, winning the Data Science Award of the competition."
-        technologies={["React", "Tailwind CSS", "Leaflet"]}
+        description="A hackathon project providing personalized CUNY resources with AI, awarded the Data Science Award."
+        technologies={["React", "OpenAI API", "Tailwind CSS"]}
         repoLink="https://github.com/crosve/CTP-Hack"
         demoLink="https://ctp-hack.vercel.app/"
       />
       <ProjectCard
         image={nycHealthMap}
         title="NYC Health Map"
-        description="In collaboration with a professor, I developed an interactive map to visualize health data across NYC as part of a research project."
-        technologies={["JavaScript", "Leaflet", "D3"]}
+        description="An interactive health data map of NYC developed using JavaScript and Leaflet, created for a research project."
+        technologies={["JavaScript", "D3", "Leaflet"]}
         repoLink="https://github.com/wilsonliu2/nyc-health-map"
         demoLink="https://wilsonliu2.github.io/nyc-health-map/"
       />
