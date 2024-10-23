@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
-
 import TechButton from "./TechButton";
 
 const hoverVariants = {
@@ -9,29 +8,16 @@ const hoverVariants = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const getTechColor = (tech) => {
-  switch (tech.toLowerCase()) {
-    case "react":
-      return "#4FD1C5"; // Teal
-    case "tailwind css":
-      return "#38B2AC"; // Emerald
-    case "javascript":
-      return "#ECC94B"; // Golden yellow
-    case "leaflet":
-      return "#48BB78"; // Green
-    case "d3":
-      return "#2D3748"; // Dark gray
-    case "pinata cloud":
-      return "#F56565"; // Red
-    case "express js":
-      return "#6B7280"; // Slate gray
-    case "mongodb":
-      return "#47A248"; // MongoDB green
-    case "google maps api":
-      return "#4285F4"; // Google blue
-    default:
-      return "#A0AEC0"; // Cool gray
-  }
+const getRandomColor = () => {
+  const greenShades = ["#A7F3D0", "#6EE7B7", "#34D399", "#10B981", "#059669"];
+
+  const grayShades = ["#CBD5E0", "#A0AEC0", "#718096", "#4A5568", "#2D3748"];
+
+  // Pick a random shade of green or gray
+  const isGreen = Math.random() > 0.5;
+  return isGreen
+    ? greenShades[Math.floor(Math.random() * greenShades.length)]
+    : grayShades[Math.floor(Math.random() * grayShades.length)];
 };
 
 const ProjectCard = ({
@@ -95,7 +81,7 @@ const ProjectCard = ({
         {/* Tech stack */}
         <div className="mt-2 flex flex-wrap gap-2 font-extralight">
           {technologies.map((tech, index) => (
-            <TechButton key={index} color={getTechColor(tech)} label={tech} />
+            <TechButton key={index} color={getRandomColor()} label={tech} />
           ))}
         </div>
       </div>

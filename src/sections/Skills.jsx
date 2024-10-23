@@ -17,6 +17,11 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiExpress,
+  SiSupabase,
+  SiNextdotjs,
+  SiFlask,
+  SiTypescript,
+  SiPython,
 } from "react-icons/si";
 import Divider from "../components/Divider";
 import Icon from "../components/skills/Icon";
@@ -84,6 +89,12 @@ const Skills = () => {
               <motion.li variants={itemVariants}>
                 <Icon icon={SiTailwindcss} label="Tailwind CSS" />
               </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiNextdotjs} label="Next.js" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiFramer} label="Framer Motion" />
+              </motion.li>
             </motion.ul>
           </motion.div>
 
@@ -120,6 +131,12 @@ const Skills = () => {
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiPostgresql} label="PostgreSQL" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiFlask} label="Flask" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiSupabase} label="Supabase" />
               </motion.li>
             </motion.ul>
           </motion.div>
@@ -175,6 +192,12 @@ const Skills = () => {
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={FaJs} label="JavaScript" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiTypescript} label="TypeScript" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiPython} label="Python" />
               </motion.li>
             </motion.ul>
           </motion.div>

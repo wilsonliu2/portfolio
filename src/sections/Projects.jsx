@@ -5,6 +5,7 @@ import Divider from "../components/Divider";
 import cunyCompass from "../assets/cuny-compass.png";
 import nycHealthMap from "../assets/nyc-health-map.png";
 import wander from "../assets/wander.png";
+import ecoisland from "../assets/ecoisland.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -26,6 +27,14 @@ const Projects = () => {
       variants={containerVariants}
     >
       <Divider text="projects" />
+      <ProjectCard
+        image={ecoisland}
+        title="EcoIsland"
+        description="A reusable food container tracking system for Governors Island, built using Next.js, Supabase, and ShadcnUI. Developed at the Fitch Codeathon to track container usage and reduce environmental impact."
+        technologies={["Next.js", "Supabase", "ShadcnUI", "TypeScript"]}
+        repoLink="https://github.com/dchen024/fitch-hackathon-fall-24"
+        demoLink="https://ecoisland.vercel.app/"
+      />
       <ProjectCard
         image={wander}
         title="Wander"
