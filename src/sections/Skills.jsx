@@ -78,22 +78,22 @@ const Skills = () => {
               animate={animationTrigger ? "visible" : "hidden"}
             >
               <motion.li variants={itemVariants}>
-                <Icon icon={FaHtml5} label="HTML" />
-              </motion.li>
-              <motion.li variants={itemVariants}>
-                <Icon icon={FaCss3Alt} label="CSS" />
-              </motion.li>
-              <motion.li variants={itemVariants}>
-                <Icon icon={FaReact} label="React" />
-              </motion.li>
-              <motion.li variants={itemVariants}>
-                <Icon icon={SiTailwindcss} label="Tailwind CSS" />
+                <Icon icon={FaReact} label="React.js" />
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiNextdotjs} label="Next.js" />
               </motion.li>
               <motion.li variants={itemVariants}>
+                <Icon icon={SiTailwindcss} label="Tailwind CSS" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
                 <Icon icon={SiFramer} label="Framer Motion" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={FaHtml5} label="HTML" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={FaCss3Alt} label="CSS" />
               </motion.li>
             </motion.ul>
           </motion.div>
@@ -118,19 +118,19 @@ const Skills = () => {
                 <Icon icon={SiSpringboot} label="Spring Boot" />
               </motion.li>
               <motion.li variants={itemVariants}>
-                <Icon icon={SiMysql} label="MySQL" />
-              </motion.li>
-              <motion.li variants={itemVariants}>
                 <Icon icon={SiNodedotjs} label="Node.js" />
               </motion.li>
               <motion.li variants={itemVariants}>
-                <Icon icon={SiExpress} label="Express" />
+                <Icon icon={SiExpress} label="Express.js" />
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiMongodb} label="MongoDB" />
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiPostgresql} label="PostgreSQL" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiMysql} label="MySQL" />
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiFlask} label="Flask" />
@@ -151,7 +151,7 @@ const Skills = () => {
             animate={animationTrigger ? "visible" : "hidden"}
           >
             <h3 className="text-lg font-light text-neutral-400">
-              Tools & Frameworks
+              Tools & Technologies
             </h3>
             <motion.ul
               className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
@@ -167,6 +167,9 @@ const Skills = () => {
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiFramer} label="Framer Motion" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={FaGitAlt} label="GitHub" />
               </motion.li>
             </motion.ul>
           </motion.div>
@@ -198,6 +201,9 @@ const Skills = () => {
               </motion.li>
               <motion.li variants={itemVariants}>
                 <Icon icon={SiPython} label="Python" />
+              </motion.li>
+              <motion.li variants={itemVariants}>
+                <Icon icon={SiPython} label="SQL" />
               </motion.li>
             </motion.ul>
           </motion.div>

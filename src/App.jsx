@@ -4,6 +4,7 @@ import Skills from "./sections/Skills";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Footer from "./sections/Footer";
+import Activities from "./sections/Activities";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <div className="mx-auto mt-32 max-w-screen-sm">
         <About />
         <Experience />
+        <Activities />
         <Projects />
         <Skills />
         <Footer />

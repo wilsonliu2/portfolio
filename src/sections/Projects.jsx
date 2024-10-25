@@ -30,7 +30,7 @@ const Projects = () => {
       <ProjectCard
         image={ecoisland}
         title="EcoIsland"
-        description="A reusable food container tracking system for Governors Island, built using Next.js, Supabase, and ShadcnUI. Developed at the Fitch Codeathon to track container usage and reduce environmental impact."
+        description="Developed a reusable container tracking system for Governors Island using Next.js and Supabase, promoting sustainability through container usage tracking."
         technologies={["Next.js", "Supabase", "ShadcnUI", "TypeScript"]}
         repoLink="https://github.com/dchen024/fitch-hackathon-fall-24"
         demoLink="https://ecoisland.vercel.app/"
@@ -38,24 +38,38 @@ const Projects = () => {
       <ProjectCard
         image={wander}
         title="Wander"
-        description="A decentralized travel-sharing platform built using React and MongoDB, winning Best Use of MongoDB Atlas at Cornell's BigRed//Hacks."
-        technologies={["Pinata Cloud", "Google Maps API", "MongoDB"]}
+        description="Built a decentralized travel platform with React and MongoDB, featuring personalized travel maps. Won Best Use of MongoDB Atlas at Cornell BigRed//Hacks."
+        technologies={[
+          "React.js",
+          "MongoDB",
+          "Node.js",
+          "Express.js",
+          "Tailwind CSS",
+          "Pinata Cloud",
+          "Google Maps API",
+        ]}
         repoLink="https://github.com/wilsonliu2/wander"
         demoLink="https://devpost.com/software/wander-rs9m76"
       />
       <ProjectCard
         image={cunyCompass}
         title="LA'CUNY Compass"
-        description="A hackathon project providing personalized CUNY resources with AI, awarded the Data Science Award."
-        technologies={["React", "OpenAI API", "Tailwind CSS"]}
+        description="Created a resource tool for CUNY students using OpenAI and React, awarded Best Use of Data Science at CTP Hacks."
+        technologies={[
+          "React.js",
+          "OpenAI API",
+          "Flask",
+          "Leaflet.js",
+          "Tailwind CSS",
+        ]}
         repoLink="https://github.com/crosve/CTP-Hack"
         demoLink="https://ctp-hack.vercel.app/"
       />
       <ProjectCard
         image={nycHealthMap}
         title="NYC Health Map"
-        description="An interactive health data map of NYC developed using JavaScript and Leaflet, created for a research project."
-        technologies={["JavaScript", "D3", "Leaflet"]}
+        description="Developed an interactive health data map of NYC using JavaScript and Leaflet, highlighting health trends across boroughs."
+        technologies={["JavaScript", "D3", "Leaflet", "HTML", "CSS"]}
         repoLink="https://github.com/wilsonliu2/nyc-health-map"
         demoLink="https://wilsonliu2.github.io/nyc-health-map/"
       />
