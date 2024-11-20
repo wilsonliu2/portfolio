@@ -3,6 +3,7 @@ import ShinyButton from "./ShinyButton";
 import SocialButton from "./SocialButton";
 import { FaGithub } from "react-icons/fa";
 import { IoIosDocument } from "react-icons/io";
+import { SiDevpost } from "react-icons/si";
 
 const Socials = () => {
   return (
@@ -13,8 +14,8 @@ const Socials = () => {
       />
       <SocialButton link="https://github.com/wilsonliu2" icon={FaGithub} />
       <SocialButton
-        link="https://www.linkedin.com/in/wilsonliu1/overlay/1729839933697/single-media-viewer?type=DOCUMENT&profileId=ACoAADrygxAB3grmsnkE8GUy3PoJMNxnAoThYVQ&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1KOElJE9RAOI7KDuxaeNnw%3D%3D"
-        icon={IoIosDocument}
+        link="https://devpost.com/wilsonliu2?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+        icon={SiDevpost}
       />
     </div>
   );

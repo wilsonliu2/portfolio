@@ -35,6 +35,12 @@ const Activities = () => {
         title="Full Stack Developer"
         description="Building and maintaining the club's website using Next.js, TypeScript, Tailwind CSS, and Spring Boot."
       />
+      <ExperienceCard
+        company="Hackathon Participant"
+        date="5 Hackathons Attended"
+        title="3x Hackathon Winner"
+        description="Participated in 5 hackathons, winning 3 awards."
+      />
     </motion.section>
   );
 };

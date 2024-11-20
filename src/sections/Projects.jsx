@@ -6,6 +6,7 @@ import cunyCompass from "../assets/cuny-compass.png";
 import nycHealthMap from "../assets/nyc-health-map.png";
 import wander from "../assets/wander.png";
 import ecoisland from "../assets/ecoisland.png";
+import binyc from "../assets/binyc.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -27,6 +28,21 @@ const Projects = () => {
       variants={containerVariants}
     >
       <Divider text="projects" />
+      <ProjectCard
+        image={binyc}
+        title="BINyc"
+        description="Created a real-time map using the MERN stack and Leaflet for reporting trash hotspots, enhancing community-driven waste management. Developed at Hack Knight Queens College."
+        technologies={[
+          "MongoDB",
+          "ExpressJS",
+          "ReactJS",
+          "NodeJS",
+          "LeafletJS",
+          "Tailwind CSS",
+        ]}
+        repoLink="https://github.com/Aziiimm/BINyc"
+        demoLink="https://devpost.com/software/binyc?ref_content=my-projects-tab&ref_feature=my_projects"
+      />
       <ProjectCard
         image={ecoisland}
         title="EcoIsland"
