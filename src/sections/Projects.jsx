@@ -7,6 +7,7 @@ import nycHealthMap from "../assets/nyc-health-map.png";
 import wander from "../assets/wander.png";
 import ecoisland from "../assets/ecoisland.png";
 import binyc from "../assets/binyc.png";
+import dietfirst from "../assets/diet-first.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -28,6 +29,22 @@ const Projects = () => {
       variants={containerVariants}
     >
       <Divider text="projects" />
+      <ProjectCard
+        image={dietfirst}
+        title="DietFirst"
+        description="Created a personalized diet recommendation app as part of CUNY Tech Prep and a class project. Features include customizable recipe filtering, health progress tracking, and seamless user experience designed to promote healthier lifestyles."
+        technologies={[
+          "MongoDB",
+          "Node.js",
+          "Express.js",
+          "React.js",
+          "Tailwind CSS",
+          "Edamam API",
+        ]}
+        repoLink="https://github.com/DietFirst/DietFirst"
+        demoLink="https://dietfirst-frontend.vercel.app/"
+      />
+
       <ProjectCard
         image={binyc}
         title="BINyc"
