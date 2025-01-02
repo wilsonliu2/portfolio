@@ -8,6 +8,7 @@ import wander from "../assets/wander.png";
 import ecoisland from "../assets/ecoisland.png";
 import binyc from "../assets/binyc.png";
 import dietfirst from "../assets/diet-first.png";
+import taskManager from "../assets/taskManager.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -105,6 +106,14 @@ const Projects = () => {
         technologies={["JavaScript", "D3", "Leaflet", "HTML", "CSS"]}
         repoLink="https://github.com/wilsonliu2/nyc-health-map"
         demoLink="https://wilsonliu2.github.io/nyc-health-map/"
+      />
+      <ProjectCard
+        image={taskManager}
+        title="Task Maanger"
+        description="A simple todo list application built using React and Spring Boot with MySQL for task management. Features include task categorization, marking tasks as completed, and a responsive UI."
+        technologies={["React", "Tailwind CSS", "Spring Boot", "MySQL"]}
+        repoLink="https://github.com/wilsonliu2/fullstack-todo"
+        demoLink="https://github.com/wilsonliu2/fullstack-todo"
       />
     </motion.section>
   );
