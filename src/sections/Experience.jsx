@@ -26,7 +26,7 @@ const Experience = () => {
 
       <ExperienceCard
         company="TipTop Technologies"
-        date="Aug 2024 - Present"
+        date="Aug 2024 - Dec 2024"
         title="Software Engineer Intern"
         description="Developed frontend using React and Tailwind, contributed to backend with Python Flask, and optimized UX."
       />

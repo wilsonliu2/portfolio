@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <div className="relative px-5 py-1 text-sm font-thin text-neutral-200">
       {/* Footer */}
-      <span>&copy; 2024 | Wilson Liu</span>
+      <span>&copy; 2025 | Wilson Liu</span>
       {/* Moving Image */}
       <motion.img
         src="/zkay_11-hollow-knight3.gif"

@@ -31,7 +31,7 @@ const Activities = () => {
       />
       <ExperienceCard
         company="Brooklyn College Computer Science Club"
-        date="Oct 2024 - Present"
+        date="Oct 2024 - Dec 2024"
         title="Full Stack Developer"
         description="Building and maintaining the club's website using Next.js, TypeScript, Tailwind CSS, and Spring Boot."
       />
