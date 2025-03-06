@@ -11,7 +11,7 @@ import dietfirst from "../assets/diet-first.png";
 import taskManager from "../assets/taskManager.png";
 
 const Projects = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const handleToggle = () => {
     setIsExpanded((prev) => !prev);

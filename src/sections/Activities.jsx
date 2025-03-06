@@ -24,6 +24,12 @@ const Activities = () => {
     >
       <Divider text="activities" />
       <ExperienceCard
+        company="BASTA Google Software Engineering Program"
+        date="Feb 2025 - Present"
+        title="Mentee"
+        description=""
+      />
+      <ExperienceCard
         company="CUNY Tech Prep"
         date="Jul 2024 - Present"
         title="Software Development Fellow"

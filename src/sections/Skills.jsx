@@ -47,7 +47,7 @@ const Skills = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef);
   const [animationTrigger, setAnimationTrigger] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   useEffect(() => {
     if (isInView) {

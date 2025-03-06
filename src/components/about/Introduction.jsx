@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const TITLES = ["Software Engineer", "Full-stack Developer", "Farmer"];
+const TITLES = ["Software Engineer", "Full-stack Developer"];
 const TYPING_SPEED = 40;
 const DELETING_SPEED = 20;
 const PAUSE_DURATION = 1500;
