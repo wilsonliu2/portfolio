@@ -70,7 +70,7 @@ const Skills = () => {
             onClick={handleToggle}
             className="font-thin text-neutral-400 hover:underline focus:outline-none"
           >
-            {isExpanded ? "Collapse" : "Expand"}
+            {isExpanded ? "Close" : "Expand"}
           </button>
         </div>
         <motion.div
