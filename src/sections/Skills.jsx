@@ -6,6 +6,7 @@ import {
   FaJs,
   FaJava,
   FaGitAlt,
+  FaDatabase,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -13,7 +14,6 @@ import {
   SiMysql,
   SiFramer,
   SiLeaflet,
-  SiPostgresql,
   SiMongodb,
   SiNodedotjs,
   SiExpress,
@@ -65,7 +65,7 @@ const Skills = () => {
     <section id="skills" ref={sectionRef}>
       <div className="p-5 pt-11">
         <div className="flex items-center justify-between">
-          <Divider text="proficient skills" />
+          <Divider text="Proficient Skills" />
           <button
             onClick={handleToggle}
             className="font-thin text-neutral-400 hover:underline focus:outline-none"
@@ -146,9 +146,6 @@ const Skills = () => {
                   <Icon icon={SiMongodb} label="MongoDB" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
-                  <Icon icon={SiPostgresql} label="PostgreSQL" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
                   <Icon icon={SiMysql} label="MySQL" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
@@ -177,13 +174,13 @@ const Skills = () => {
                 variants={containerVariants}
               >
                 <motion.li variants={itemVariants}>
+                  <motion.li variants={itemVariants}>
+                    <Icon icon={FaReact} label="React Native" />
+                  </motion.li>
                   <Icon icon={FaGitAlt} label="Git" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
                   <Icon icon={SiLeaflet} label="Leaflet.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiFramer} label="Framer Motion" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
                   <Icon icon={FaGitAlt} label="GitHub" />
@@ -209,16 +206,16 @@ const Skills = () => {
                   <Icon icon={FaJava} label="Java" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
-                  <Icon icon={FaJs} label="JavaScript" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
                   <Icon icon={SiTypescript} label="TypeScript" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
                   <Icon icon={SiPython} label="Python" />
                 </motion.li>
                 <motion.li variants={itemVariants}>
-                  <Icon icon={SiPython} label="SQL" />
+                  <Icon icon={FaJs} label="JavaScript" />
+                </motion.li>
+                <motion.li variants={itemVariants}>
+                  <Icon icon={FaDatabase} label="SQL" />
                 </motion.li>
               </motion.ul>
             </motion.div>

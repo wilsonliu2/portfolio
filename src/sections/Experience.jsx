@@ -28,19 +28,19 @@ const Experience = () => {
         company="TipTop Technologies"
         date="Aug 2024 - Dec 2024"
         title="Software Engineer Intern"
-        description="Developed frontend using React and Tailwind, contributed to backend with Python Flask, and optimized UX."
-      />
-      <ExperienceCard
-        company="Brooklyn College"
-        date="Oct 2024 - Present"
-        title="Computer Science Tutor"
-        description="Tutored over 40 students per semester in Java, OOP, and data structures, leading exam review sessions."
+        description="Developed frontend features with React and Tailwind CSS, contributed backend APIs with Python and Flask, and optimized user experience."
       />
       <ExperienceCard
         company="The TOW Foundation"
         date="Jun 2024 - Aug 2024"
-        title="Research Assistant"
-        description="Developed an interactive NYC health map with JavaScript and Leaflet, presenting data insights to academics."
+        title="Data Science Research Assistant"
+        description="Developed an interactive NYC health map using JavaScript and Leaflet.js, analyzing 20,000+ data points to provide insights for researchers."
+      />
+      <ExperienceCard
+        company="Brooklyn College"
+        date="Oct 2022 - Present"
+        title="Computer Science Tutor"
+        description="Tutored 30+ students per semester in Java, OOP, and data structures, and led exam review sessions."
       />
     </motion.section>
   );
