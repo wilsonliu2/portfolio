@@ -12,10 +12,10 @@ export default function App() {
       <Navigation />
       <div className="mx-auto mt-32 max-w-screen-sm">
         <About />
+        <Skills />
         <Experience />
         <Activities />
         <Projects />
-        <Skills />
         <Footer />
       </div>
     </>

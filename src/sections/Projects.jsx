@@ -12,7 +12,7 @@ import taskManager from "../assets/taskManager.png";
 import signlingo from "../assets/signlingo.png";
 
 const Projects = () => {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
     setIsExpanded((prev) => !prev);

@@ -6,7 +6,7 @@ const Icon = ({ icon: Icon, label }) => {
     <motion.div
       whileHover={{
         scale: 1.05,
-        backgroundColor: "#d4d4d4", // Neutral-300
+        backgroundColor: "#d4d4d4",
         color: "black",
         transition: { duration: 0.3 },
       }}

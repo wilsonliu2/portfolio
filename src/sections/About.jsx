@@ -24,8 +24,8 @@ const About = () => {
         className="px-5 font-thin text-neutral-400"
       >
         <p>
-          Passionate and aspiring full-stack developer and college student from
-          NYC, I love coding and enjoy learning new technologies.
+          Full-stack web and mobile developer specializing in React and React
+          Native.
         </p>
       </motion.div>
       <motion.div variants={fadeInVariant}>

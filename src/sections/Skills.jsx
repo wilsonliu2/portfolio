@@ -1,227 +1,66 @@
-import React, { useRef, useEffect, useState } from "react";
+import { FaReact, FaGitAlt, FaJava } from "react-icons/fa";
 import {
-  FaReact,
-  FaCss3Alt,
-  FaHtml5,
-  FaJs,
-  FaJava,
-  FaGitAlt,
-  FaDatabase,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiSpringboot,
-  SiMysql,
-  SiFramer,
-  SiLeaflet,
-  SiMongodb,
-  SiNodedotjs,
-  SiExpress,
-  SiSupabase,
   SiNextdotjs,
-  SiFlask,
   SiTypescript,
-  SiPython,
+  SiTailwindcss,
+  SiMongodb,
+  SiFigma,
+  SiExpo,
+  SiSpringboot,
 } from "react-icons/si";
 import Divider from "../components/Divider";
-import Icon from "../components/skills/Icon";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-      delayChildren: 0.4,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
+const skills = [
+  { icon: FaReact, label: "React.js", color: "#61DBFB" },
+  { icon: FaReact, label: "React Native", color: "#61DBFB" },
+  { icon: SiNextdotjs, label: "Next.js", color: "#000000" },
+  { icon: SiExpo, label: "Expo", color: "#000020" },
+  { icon: SiTailwindcss, label: "NativeWind", color: "#38BDF8" },
+  { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38BDF8" },
+  { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
+  { icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
+  { icon: FaJava, label: "Java", color: "#f89820" },
+  { icon: SiSpringboot, label: "Spring Boot", color: "#6DB33F" },
+  { icon: SiFigma, label: "Figma", color: "#F24E1E" },
+  { icon: FaGitAlt, label: "Git", color: "#F1502F" },
+];
 
 const Skills = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef);
-  const [animationTrigger, setAnimationTrigger] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(true);
-
-  useEffect(() => {
-    if (isInView) {
-      setAnimationTrigger(true);
-    } else {
-      setAnimationTrigger(false);
-    }
-  }, [isInView]);
-
-  const handleToggle = () => {
-    setIsExpanded((prev) => !prev);
-  };
-
   return (
-    <section id="skills" ref={sectionRef}>
-      <div className="p-5 pt-11">
-        <div className="flex items-center justify-between">
-          <Divider text="Proficient Skills" />
-          <button
-            onClick={handleToggle}
-            className="font-thin text-neutral-400 hover:underline focus:outline-none"
+    <section id="skills" className="p-5 pt-11">
+      <Divider text="Main Technologies" />
+      <motion.ul
+        className="mt-6 grid grid-cols-2 gap-4 text-neutral-300 sm:grid-cols-3 md:grid-cols-4"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+          },
+        }}
+      >
+        {skills.map(({ icon: IconComp, label, color }) => (
+          <motion.li
+            key={label}
+            className="relative flex flex-col items-center justify-center gap-2 rounded-xl border border-neutral-800 bg-neutral-900/60 p-5 text-center shadow-[0_0_6px_rgba(16,185,129,0.08)] transition duration-300 before:absolute before:inset-0 before:z-0 before:rounded-xl before:bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.05)_0%,transparent_70%)] hover:scale-[1.02] hover:border-emerald-600 hover:shadow-[0_0_10px_rgba(16,185,129,0.15)]"
+            style={{ minHeight: "110px" }}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
           >
-            {isExpanded ? "Close" : "Expand"}
-          </button>
-        </div>
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={
-            isExpanded
-              ? { height: "auto", opacity: 1 }
-              : { height: 0, opacity: 0 }
-          }
-          transition={{ duration: 0.3 }}
-          className="overflow-hidden"
-        >
-          <div className="mt-4 flex justify-between">
-            {/* Frontend Development */}
-            <motion.div
-              className="w-1/2 pr-4"
-              variants={containerVariants}
-              initial="hidden"
-              animate={animationTrigger ? "visible" : "hidden"}
-            >
-              <h3 className="text-lg font-light text-neutral-400">
-                Frontend Development
-              </h3>
-              <motion.ul
-                className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
-                variants={containerVariants}
-              >
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaReact} label="React.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiNextdotjs} label="Next.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiTailwindcss} label="Tailwind CSS" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiFramer} label="Framer Motion" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaHtml5} label="HTML" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaCss3Alt} label="CSS" />
-                </motion.li>
-              </motion.ul>
-            </motion.div>
-
-            {/* Backend & Databases */}
-            <motion.div
-              className="w-1/2 border-l border-neutral-700 pl-4"
-              variants={containerVariants}
-              initial="hidden"
-              animate={animationTrigger ? "visible" : "hidden"}
-            >
-              <h3 className="text-lg font-light text-neutral-400">
-                Backend & Databases
-              </h3>
-              <motion.ul
-                className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
-                variants={containerVariants}
-              >
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiSpringboot} label="Spring Boot" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiNodedotjs} label="Node.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiExpress} label="Express.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiMongodb} label="MongoDB" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiMysql} label="MySQL" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiFlask} label="Flask" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiSupabase} label="Supabase" />
-                </motion.li>
-              </motion.ul>
-            </motion.div>
-          </div>
-
-          <div className="mt-8 flex justify-between border-t border-neutral-700 pt-8">
-            {/* Tools & Frameworks */}
-            <motion.div
-              className="w-1/2 pr-4"
-              variants={containerVariants}
-              initial="hidden"
-              animate={animationTrigger ? "visible" : "hidden"}
-            >
-              <h3 className="text-lg font-light text-neutral-400">
-                Tools & Technologies
-              </h3>
-              <motion.ul
-                className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
-                variants={containerVariants}
-              >
-                <motion.li variants={itemVariants}>
-                  <motion.li variants={itemVariants}>
-                    <Icon icon={FaReact} label="React Native" />
-                  </motion.li>
-                  <Icon icon={FaGitAlt} label="Git" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiLeaflet} label="Leaflet.js" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaGitAlt} label="GitHub" />
-                </motion.li>
-              </motion.ul>
-            </motion.div>
-
-            {/* Programming Languages */}
-            <motion.div
-              className="w-1/2 border-l border-neutral-700 pl-4"
-              variants={containerVariants}
-              initial="hidden"
-              animate={animationTrigger ? "visible" : "hidden"}
-            >
-              <h3 className="text-lg font-light text-neutral-400">
-                Programming Languages
-              </h3>
-              <motion.ul
-                className="mt-2 grid grid-cols-2 gap-4 text-neutral-300"
-                variants={containerVariants}
-              >
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaJava} label="Java" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiTypescript} label="TypeScript" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={SiPython} label="Python" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaJs} label="JavaScript" />
-                </motion.li>
-                <motion.li variants={itemVariants}>
-                  <Icon icon={FaDatabase} label="SQL" />
-                </motion.li>
-              </motion.ul>
-            </motion.div>
-          </div>
-        </motion.div>
-      </div>
+            <div className="relative z-10 flex flex-col items-center justify-center gap-2">
+              <IconComp className="text-3xl" style={{ color }} />
+              <span className="text-sm font-medium text-neutral-200">
+                {label}
+              </span>
+            </div>
+          </motion.li>
+        ))}
+      </motion.ul>
     </section>
   );
 };
